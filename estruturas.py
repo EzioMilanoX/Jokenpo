@@ -18,7 +18,7 @@ class Rodada:
 
 class No:
     """
-    Classe Nó exigida pelo professor. 
+    Classe Nó. 
     Guarda o dado (a Rodada) e o ponteiro para o próximo Nó da fila.
     """
     def __init__(self, valor):
@@ -26,7 +26,6 @@ class No:
         self.proximo = None   # Aponta para o vazio inicialmente
 
     def mostrar_no(self):
-        # Método exigido pelo professor para imprimir o dado no terminal
         print(self.valor)
 
 class ListaEncadeada:
@@ -81,7 +80,7 @@ class ListaEncadeada:
             atual = atual.proximo
         return vit_j1, vit_j2
 
-    # REQUISITO 4: RELATÓRIO
+    # REQUISITO 4: RELATÓRIO 
     def relatorio(self, vencedor_final):
         """Gera o texto final do histórico da partida e usa o mostrar_no()"""
         texto = ""
@@ -89,7 +88,7 @@ class ListaEncadeada:
         
         atual = self.primeiro
         while atual is not None:
-            atual.mostrar_no() # Imprime no console (Exigência do print do professor)
+            atual.mostrar_no() # Imprime no console
             texto += str(atual.valor) + "\n" # Salva no texto da interface gráfica
             atual = atual.proximo
             

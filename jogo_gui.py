@@ -323,4 +323,3 @@ class JogoGUI:
                 
         caixa_texto.config(state=tk.DISABLED) 
         tk.Button(self.root, text="Voltar ao Menu", font=("Segoe UI", 12, "bold"), bg="#F38BA8", fg="#1E1E2E", relief=tk.FLAT, cursor="hand2", command=self.construir_tela_menu).pack(pady=20)
-
